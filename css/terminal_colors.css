@@ -1,0 +1,22 @@
+body
+{
+    background-color: #0f111a;
+    overflow: hidden;
+}
+
+@font-face {
+    font-family: 'JetBrains Mono';
+    src: url('../fonts/mono.woff2') format('woff2')
+}
+
+.mono-text
+{
+    font-family: "JetBrains Mono", serif;
+    color: #b2ccd6;
+}
+
+h1
+{
+    font-size: 2vw;
+    user-select: none;
+}
