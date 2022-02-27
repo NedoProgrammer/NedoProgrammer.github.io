@@ -58,6 +58,6 @@ function FadeOutAndRedirect(link)
 
 function RevealSpoiler()
 {
-    $('#SpoilerButton').prop('disabled', true);
+    $('#SpoilerButton').prop('disabled', true).css('pointer-events', 'none');
     $('#SpoilerImage').attr('src', 'assets/rick.png');
 }

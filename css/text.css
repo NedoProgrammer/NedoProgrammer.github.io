@@ -15,7 +15,7 @@ h2
 .mono-text
 {
     font-family: "mono", serif;
-    color: #b2ccd6;
+    color: #bababa;
 }
 
 .clickable-text
@@ -23,14 +23,14 @@ h2
     border: none;
     font-family: "mono", serif;
     text-decoration: none;
-    color: #b2ccd6;
+    color: #bababa;
     background: none;
     transition: color 0.25s ease-in-out;
 }
 
 button.clickable-text:hover
 {
-    color: #ffcb6b;
+    color: #ffc66d;
     cursor: pointer;
 }
 

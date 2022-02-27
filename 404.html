@@ -2,9 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>uh oh</title>
+    <script src="js/animejs/anime.min.js"></script>
+    <script src="js/jquery/jquery.min.js"></script>
+    <script src="js/typewriter.min.js"></script>
+    <link rel="stylesheet" href="css/terminal_colors.css">
+    <link rel="stylesheet" href="css/other.css">
+    <link rel="stylesheet" href="css/text.css">
+    <script src="js/pages/404.js"></script>
 </head>
 <body>
-
+<div class="fill" style="position: relative;" id="Content">
+    <div style="position: fixed; bottom: 5%; width: 50%;">
+        <h1 class="mono-text" style="position: relative; left: 2%; font-size: xxx-large; color: #e84933" id="ErrorTyper"></h1>
+        <p class="mono-text" id="ErrorDescription" style="position: relative; top: 15%; opacity: 0; left: 2%; font-size: x-large">InvalidOperationException: requested page was not found.</p>
+        <button onclick="GoBack()" id="GoBackButton" class="clickable-text" style="position: relative; top: 15%; opacity: 0; left: 2%; font-size: x-large">Go to the main page</button>
+    </div>
+</div>
 </body>
 </html>

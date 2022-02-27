@@ -54,7 +54,7 @@ function MyProjects()
 
 function Blog()
 {
-   FadeOutAndRedirect('blog.html');
+   FadeOutAndRedirect('404.html');
 }
 
 function Contact()
