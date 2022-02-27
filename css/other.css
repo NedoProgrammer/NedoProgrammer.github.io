@@ -1,6 +1,19 @@
-.centered-container
+.fill
 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+.centered
+{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+.centered-x
+{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 }
