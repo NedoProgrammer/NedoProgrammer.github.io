@@ -5,6 +5,13 @@ h1
     user-select: none;
 }
 
+h2
+{
+    font-weight: normal;
+    font-size: xx-large;
+    user-select: none;
+}
+
 .mono-text
 {
     font-family: "mono", serif;
@@ -15,7 +22,6 @@ h1
 {
     border: none;
     font-family: "mono", serif;
-    font-size: xxx-large;
     text-decoration: none;
     color: #b2ccd6;
     background: none;
@@ -31,4 +37,10 @@ button.clickable-text:hover
 .translate-center
 {
     transform: translate(-50%, -50%);
+}
+
+.align-text
+{
+    text-wrap: none;
+    text-align: center;
 }

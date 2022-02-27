@@ -71,7 +71,7 @@ function FadeOutAndRedirect(link)
       duration: 1000,
       easing: 'easeInOutQuad',
       complete: () => {
-         window.location.href = link;
+         window.location.replace(link);
       }
    });
 }
