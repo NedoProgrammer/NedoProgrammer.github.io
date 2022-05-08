@@ -1,15 +1,17 @@
 ﻿const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 
-$(() => {
-    anime({
-        targets: ["#GenerateButton"],
-        opacity: 1,
-        duration: 1000,
-        autoplay: true,
-        easing: 'easeInOutQuad',
-        marginTop: 0
+Animate = () => {
+    $(() => {
+        anime({
+            targets: ["#GenerateButton"],
+            opacity: 1,
+            duration: 1000,
+            autoplay: true,
+            easing: 'easeInOutQuad',
+            marginTop: 0
+        });
     });
-});
+};
 
 GenerateClicked = () => {
     $("#GenerateButton")[0].disabled = true;
@@ -92,7 +94,6 @@ AnimateCatImage = () => {
 }
 
 WaitingForResults = () => {
-    GenerateRandomString();
     delay(2000).then(() => {
        ChangeText("Done!").then(() => {
          delay(1000).then(() => {
@@ -111,6 +112,7 @@ WaitingForResults = () => {
 };
 
 ShowResult = () => {
+    GenerateRandomString();
     $("#Result").text(password);
     twemoji.parse(document.body);
     anime({
